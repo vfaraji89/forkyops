@@ -46,13 +46,22 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-[#0E1117] to-gray-900 flex">
-      {/* Left Side - Branding & Features */}
-      <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 relative overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"></div>
+      {/* Left Side - Hero Image & Branding */}
+      <div className="hidden lg:flex lg:w-1/2 flex-col justify-center relative overflow-hidden">
+        {/* Hero Warehouse Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/Image.jpeg" 
+            alt="Modern warehouse with forklift operations"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-gray-900/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-gray-900/40"></div>
+        </div>
         
-        <div className="relative z-10">
+        {/* Content Overlay */}
+        <div className="relative z-10 px-12">
           {/* Logo & Title */}
           <div className="mb-8">
             <Logo size="lg" variant="default" showText={true} />
@@ -61,14 +70,18 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           {/* Hero Text */}
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-white mb-4 leading-tight">
-              The Future of
-              <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent"> Forklift Fleet </span>
-              Management
+              Transform Your
+              <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent"> Warehouse </span>
+              Operations
             </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-200 leading-relaxed mb-6">
               Harness the power of AI to optimize your fleet operations, predict maintenance needs, 
               and ensure maximum safety and efficiency across your warehouse operations.
             </p>
+            <div className="flex items-center space-x-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-lg backdrop-blur-sm w-fit">
+              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+              <span className="text-blue-300 text-sm font-medium">Live Demo Environment</span>
+            </div>
           </div>
 
           {/* Features */}
@@ -81,12 +94,12 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
                   className="flex items-center space-x-4 group"
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-white font-semibold text-lg">{feature.title}</h3>
-                    <p className="text-gray-400">{feature.description}</p>
+                    <p className="text-gray-300">{feature.description}</p>
                   </div>
                 </div>
               );
@@ -94,18 +107,18 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-800/50">
+          <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-700/50">
             <div className="text-center">
               <h4 className="text-2xl font-bold text-blue-400 mb-1">99.9%</h4>
-              <p className="text-gray-400 text-sm">Uptime</p>
+              <p className="text-gray-300 text-sm">Uptime</p>
             </div>
             <div className="text-center">
               <h4 className="text-2xl font-bold text-green-400 mb-1">35%</h4>
-              <p className="text-gray-400 text-sm">Cost Reduction</p>
+              <p className="text-gray-300 text-sm">Cost Reduction</p>
             </div>
             <div className="text-center">
               <h4 className="text-2xl font-bold text-violet-400 mb-1">24/7</h4>
-              <p className="text-gray-400 text-sm">AI Monitoring</p>
+              <p className="text-gray-300 text-sm">AI Monitoring</p>
             </div>
           </div>
         </div>

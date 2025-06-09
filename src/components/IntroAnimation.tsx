@@ -70,12 +70,22 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
 
   return (
     <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-[#0E1117] to-gray-900 z-50 flex items-center justify-center">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src="/Image.jpeg" 
+          alt="Warehouse operations"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-[#0E1117]/95 to-gray-900/90"></div>
+      </div>
+
       {/* Background Effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-green-500/5 rounded-full blur-3xl animate-pulse"></div>
 
-      <div className="text-center max-w-2xl mx-auto px-8">
+      <div className="text-center max-w-2xl mx-auto px-8 relative z-10">
         {/* Logo */}
         <div className="flex items-center justify-center mb-8">
           <Logo size="xl" variant="default" showText={true} />
@@ -101,7 +111,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
             return (
               <div
                 key={step.title}
-                className={`flex items-center space-x-4 p-4 rounded-xl transition-all duration-500 ${
+                className={`flex items-center space-x-4 p-4 rounded-xl transition-all duration-500 backdrop-blur-sm ${
                   isActive 
                     ? 'bg-gray-800/50 border border-gray-700/50 scale-105' 
                     : isCompleted 
