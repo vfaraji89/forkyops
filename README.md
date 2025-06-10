@@ -4,10 +4,9 @@
 
 ## 🌟 Overview
 
-ForkyOps is a next-generation, AI-powered forklift fleet management platform designed for modern warehouse operations. Built with cutting-edge technology and predictive analytics, ForkyOps transforms traditional fleet management into an intelligent, data-driven operation with a beautiful, production-ready interface.
+ForkyOps is an AI-assisted forklift fleet management platform designed for modern warehouse operations. Built with cutting-edge technology and predictive analytics, ForkyOps transforms traditional fleet management into an intelligent, data-driven operation with a beautiful, production-ready interface.
 
 ### ✨ Key Features
-
 - **🤖 AI-Powered Insights** - Predictive maintenance and intelligent fleet optimization
 - **📊 Real-Time Analytics** - Live performance monitoring with IoT integration  
 - **🛡️ Safety Intelligence** - Proactive risk detection and incident prevention
@@ -205,6 +204,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Built with ❤️ for the future of warehouse operations**
+**Built with ❤️ for the of warehouse operations**
 
 *ForkyOps - Where AI meets operational excellence*
