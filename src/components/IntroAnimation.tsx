@@ -73,11 +73,11 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
-          src="/Image.jpeg" 
-          alt="Warehouse operations"
-          className="w-full h-full object-cover opacity-20"
+          src="/warehouse-stylized.png" 
+          alt="Warehouse operations - stylized illustration"
+          className="w-full h-full object-cover opacity-15"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-[#0E1117]/95 to-gray-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-[#0E1117]/98 to-gray-900/95"></div>
       </div>
 
       {/* Background Effects */}

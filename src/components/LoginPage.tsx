@@ -48,16 +48,16 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-[#0E1117] to-gray-900 flex">
       {/* Left Side - Hero Image & Branding */}
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-center relative overflow-hidden">
-        {/* Hero Warehouse Image */}
+        {/* Hero Stylized Warehouse Image */}
         <div className="absolute inset-0">
           <img 
-            src="/Image.jpeg" 
-            alt="Modern warehouse with forklift operations"
+            src="/warehouse-stylized.png" 
+            alt="Modern warehouse with forklift operations - stylized illustration"
             className="w-full h-full object-cover"
           />
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/80 to-gray-900/60"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-gray-900/40"></div>
+          {/* Artistic Gradient Overlay - lighter to preserve the illustration style */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/85 via-gray-900/70 to-gray-900/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-gray-900/30"></div>
         </div>
         
         {/* Content Overlay */}
@@ -74,7 +74,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
               <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent"> Warehouse </span>
               Operations
             </h2>
-            <p className="text-xl text-gray-200 leading-relaxed mb-6">
+            <p className="text-xl text-gray-100 leading-relaxed mb-6">
               Harness the power of AI to optimize your fleet operations, predict maintenance needs, 
               and ensure maximum safety and efficiency across your warehouse operations.
             </p>
@@ -99,7 +99,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold text-lg">{feature.title}</h3>
-                    <p className="text-gray-300">{feature.description}</p>
+                    <p className="text-gray-200">{feature.description}</p>
                   </div>
                 </div>
               );
@@ -110,15 +110,15 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-700/50">
             <div className="text-center">
               <h4 className="text-2xl font-bold text-blue-400 mb-1">99.9%</h4>
-              <p className="text-gray-300 text-sm">Uptime</p>
+              <p className="text-gray-200 text-sm">Uptime</p>
             </div>
             <div className="text-center">
               <h4 className="text-2xl font-bold text-green-400 mb-1">35%</h4>
-              <p className="text-gray-300 text-sm">Cost Reduction</p>
+              <p className="text-gray-200 text-sm">Cost Reduction</p>
             </div>
             <div className="text-center">
               <h4 className="text-2xl font-bold text-violet-400 mb-1">24/7</h4>
-              <p className="text-gray-300 text-sm">AI Monitoring</p>
+              <p className="text-gray-200 text-sm">AI Monitoring</p>
             </div>
           </div>
         </div>
