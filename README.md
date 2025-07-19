@@ -53,7 +53,7 @@ ForkyOps is an AI-assisted forklift fleet management platform designed for moder
 - Context-aware suggestions and quick filters
 - Advanced search capabilities with intelligent results
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React 18 with TypeScript
 - **Styling**: Tailwind CSS with custom animations
@@ -62,43 +62,8 @@ ForkyOps is an AI-assisted forklift fleet management platform designed for moder
 - **State Management**: React hooks and context
 - **Responsive Design**: Mobile-first approach with breakpoints
 
-## 🚀 Getting Started
 
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn package manager
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-org/forkyops.git
-cd forkyops
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Build for Production
-
-```bash
-# Create production build
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-### Demo Access
-- **Email**: Any valid email format
-- **Password**: Any password
-- Uses comprehensive mock data to showcase all features
-
-## 📱 Usage Guide
+## Usage Guide
 
 1. **Login** - Enter any email/password to access the full demo
 2. **Navigate** - Use the elegant sidebar with hover tooltips
@@ -106,7 +71,7 @@ npm run preview
 4. **Explore** - All modules contain interactive demo data and animations
 5. **Experience** - Enjoy the smooth animations and responsive design
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 - **Dark Mode First** with modern glassmorphism effects and subtle animations
 - **AI-Centric** interface with prominent recommendations and insights
@@ -114,13 +79,6 @@ npm run preview
 - **Performance Optimized** with sub-second load times and smooth interactions
 - **Accessibility** focused with proper contrast ratios and keyboard navigation
 
-## 📊 Performance Metrics (Demo Data)
-
-- **35% Cost Reduction** in fleet operations through AI optimization
-- **99.9% Uptime** achieved with predictive maintenance algorithms
-- **24/7 AI Monitoring** for continuous fleet optimization
-- **15% Efficiency Gain** through intelligent routing and scheduling
-- **96.3% Safety Score** with proactive risk management
 
 ## 🏗️ Project Structure
 
